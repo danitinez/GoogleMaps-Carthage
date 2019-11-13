@@ -54,6 +54,10 @@
 		15B54FE021417D3D00A99A88 /* GMSCoordinateBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B54FD921417D3D00A99A88 /* GMSCoordinateBounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15B54FE221417D5E00A99A88 /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B54FE121417D5E00A99A88 /* GoogleMapsBase */; };
 		15B54FEA214184F100A99A88 /* GoogleMaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B54FE8214184F000A99A88 /* GoogleMaps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686AEC26237C5DE800DAEA13 /* GMSStyleSpan.h in Headers */ = {isa = PBXBuildFile; fileRef = 686AEC23237C5DE800DAEA13 /* GMSStyleSpan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686AEC27237C5DE800DAEA13 /* GMSPolygonLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 686AEC24237C5DE800DAEA13 /* GMSPolygonLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686AEC28237C5DE800DAEA13 /* GMSStrokeStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 686AEC25237C5DE800DAEA13 /* GMSStrokeStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686AEC29237C5FC300DAEA13 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE03B91D9D85E5003E7610 /* CoreText.framework */; };
 		A72C2FA61F6A86DD0076B723 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE03A51D9D8500003E7610 /* SystemConfiguration.framework */; };
 		A72C2FAA1F6A88100076B723 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72C2FA91F6A88100076B723 /* CoreTelephony.framework */; };
 		A76265062037687D00DD730E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE03A31D9D84EC003E7610 /* Security.framework */; };
@@ -156,6 +160,9 @@
 		15B54FE4214183F200A99A88 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		15B54FE6214184F000A99A88 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		15B54FE8214184F000A99A88 /* GoogleMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMaps.h; sourceTree = "<group>"; };
+		686AEC23237C5DE800DAEA13 /* GMSStyleSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSStyleSpan.h; sourceTree = "<group>"; };
+		686AEC24237C5DE800DAEA13 /* GMSPolygonLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSPolygonLayer.h; sourceTree = "<group>"; };
+		686AEC25237C5DE800DAEA13 /* GMSStrokeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSStrokeStyle.h; sourceTree = "<group>"; };
 		A72C2FA91F6A88100076B723 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A76265072037689800DD730E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		B9EE036D1D9D8429003E7610 /* GoogleMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686AEC29237C5FC300DAEA13 /* CoreText.framework in Frameworks */,
 				B9EE03A21D9D84E3003E7610 /* libz.tbd in Frameworks */,
 				B9EE03A01D9D84DE003E7610 /* libc++.tbd in Frameworks */,
 				B9EE03AC1D9D8518003E7610 /* CoreData.framework in Frameworks */,
@@ -270,6 +278,9 @@
 		15B54F7E21417C7000A99A88 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				686AEC24237C5DE800DAEA13 /* GMSPolygonLayer.h */,
+				686AEC25237C5DE800DAEA13 /* GMSStrokeStyle.h */,
+				686AEC23237C5DE800DAEA13 /* GMSStyleSpan.h */,
 				15B54F7F21417C7000A99A88 /* GMSPanoramaView.h */,
 				15B54F8021417C7000A99A88 /* GMSIndoorBuilding.h */,
 				15B54F8121417C7000A99A88 /* GMSMarker.h */,
@@ -472,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B54FAF21417C7000A99A88 /* GMSCameraUpdate.h in Headers */,
+				686AEC27237C5DE800DAEA13 /* GMSPolygonLayer.h in Headers */,
 				15B54FCD21417C7000A99A88 /* GMSProjection.h in Headers */,
 				15B54FB721417C7000A99A88 /* GMSPanorama.h in Headers */,
 				15B54FB321417C7000A99A88 /* GMSOrientation.h in Headers */,
@@ -498,6 +510,7 @@
 				15B54FA821417C7000A99A88 /* GMSIndoorBuilding.h in Headers */,
 				15B54FC521417C7000A99A88 /* GMSPath.h in Headers */,
 				15B54FC721417C7000A99A88 /* GMSGeocoder.h in Headers */,
+				686AEC26237C5DE800DAEA13 /* GMSStyleSpan.h in Headers */,
 				15B54FA921417C7000A99A88 /* GMSMarker.h in Headers */,
 				15B54FC621417C7000A99A88 /* GMSURLTileLayer.h in Headers */,
 				15B54FBD21417C7000A99A88 /* GMSPanoramaCameraUpdate.h in Headers */,
@@ -509,6 +522,7 @@
 				15B54FCB21417C7000A99A88 /* GMSPanoramaLayer.h in Headers */,
 				15B54FC121417C7000A99A88 /* GoogleMaps.h in Headers */,
 				15B54FBE21417C7000A99A88 /* GMSPanoramaCamera.h in Headers */,
+				686AEC28237C5DE800DAEA13 /* GMSStrokeStyle.h in Headers */,
 				15B54FB121417C7000A99A88 /* GMSPolyline.h in Headers */,
 				15B54FB021417C7000A99A88 /* GMSMapLayer.h in Headers */,
 			);
@@ -647,6 +661,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B9EE03631D9D8429003E7610;
@@ -774,7 +789,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -826,7 +841,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
